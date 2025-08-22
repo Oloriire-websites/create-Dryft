@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightPath Marketing</title>
+  <style>
+    /* ===== Global Styles ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f8fafc;
+      color: #0f172a;
+    }
+
+    h1, h2, h3 {
+      font-weight: bold;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ===== Hero Section ===== */
+    header {
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    header a {
+      background: #38bdf8;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      transition: transform 0.3s, background 0.3s;
+      display: inline-block;
+    }
+
+    header a:hover {
+      background: #0ea5e9;
+      transform: scale(1.1);
+    }
+
+    /* ===== Section Styles ===== */
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      animation: slideUp 1s forwards;
+    }
+
+    section:nth-of-type(1) { animation-delay: 0.5s; }
+    section:nth-of-type(2) { animation-delay: 1s; }
+    section:nth-of-type(3) { animation-delay: 1.5s; }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0f172a;
+    }
+
+    /* ===== Services Section ===== */
+    .services {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      flex: 1 1 250px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    /* ===== Contact Form ===== */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea, button {
+      padding: 12px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+    }
+
+    button {
+      background: #38bdf8;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    button:hover {
+      background: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 30px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+  <header>
+    <h1>BrightPath Marketing</h1>
+    <p>Helping businesses shine through powerful digital marketing</p>
+    <a href="#contact">Get Started</a>
+  </header>
+
+  <!-- About -->
+  <section>
+    <h2>About Us</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      At BrightPath Marketing, we specialize in building strong online presence for businesses.
+      From social media campaigns to SEO, we deliver strategies that bring measurable results.
+    </p>
+  </section>
+
+  <!-- Services -->
+  <section>
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Social Media Marketing</h3>
+        <p>Grow your brand on platforms like Instagram, TikTok, and Facebook.</p>
+      </div>
+      <div class="card">
+        <h3>SEO Optimization</h3>
+        <p>Rank higher on Google and attract more customers to your website.</p>
+      </div>
+      <div class="card">
+        <h3>Content Creation</h3>
+        <p>Engaging blogs, graphics, and videos to tell your brand story.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 BrightPath Marketing. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
